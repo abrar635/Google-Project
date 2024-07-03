@@ -142,11 +142,34 @@ footer{
 @media (max-width:768px){
     .searchbox .icon{
         width: 30%;
+        gap: 330px;
+    }
+    .buttons{
+        position: relative;
+        left: 82px;
+    }
+    .lang{
+        position: relative;
+        left: 75px;
+    }
+    .searchbox{
+        position: relative;
+        left: 80px;
     }
     .row ul{
         display: block;
+        gap: 200px;
        }
-       section header ul li button{
-        background-color: red;
-    }
+       .lg{
+        position: relative;
+        left: 70px;
+       }
+       section header{
+        position: absolute;
+        left: 170px;
+       }
+       footer{
+        position: fixed;
+        bottom: 0;
+       }
 }
