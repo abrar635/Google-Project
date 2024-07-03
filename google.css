@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+section header ul li a{
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+}
+section header ul li button{
+    background-color: #4584ef;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 14px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.e1:hover,.e2:hover{
+    text-decoration: underline;
+}
+section .main{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.search{
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border:1px solid #ccc;
+    outline: none;
+    background: none;
+    font-size: 16px;
+}
+.searchbox .icon{
+    position: absolute;
+    left: 20px;
+    top: 17px;
+    background: none;
+    width: 100%;
+    display: flex;
+    gap: 500px;
+    
+}
+.m{
+    position: relative;
+    top: -6px;
+}
+.buttons{
+    margin-top: 20px;
+}
+.buttons button{
+    margin: 0 5px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 1px solid transparent;
+}
+.buttons button:hover{
+    border-radius: 1px solid #ccc;
+}
+.lang{
+    margin: 20px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+}
+.row ul{
+ display: flex;
+}
+.row ul li{
+    list-style: none;
+}
+.row ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #5f6368;
+    margin-right: 25px;
+}
+/*Desktop*/
+@media (min-width:1023px)
+/*Tablet*/
+
+@media (min-width:787px) and (max-width:1024px){
+    section header ul li button{
+        background-color: red;
+    }
+}
+/*Mobile View*/
+@media (max-width:768px){
+    .searchbox .icon{
+        width: 30%;
+    }
+    .row ul{
+        display: block;
+       }
+       section header ul li button{
+        background-color: red;
+    }
+}
