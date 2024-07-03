@@ -10,11 +10,14 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
 }
 section header{
     position: absolute;
     top: 0;
+    right: 10px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -73,19 +76,23 @@ section .main{
     background: none;
     font-size: 16px;
 }
-.searchbox .icon{
-    position: absolute;
-    left: 20px;
-    top: 17px;
-    background: none;
-    width: 100%;
-    display: flex;
-    gap: 500px;
-    
+.searchbox .sr{
+    width: 10px;
+    position: relative;
+    top: -30px;
+    left: 18px;
+}
+.searchbox .m{
+    position: relative;
+    top: -54px;
+    left: 540px;
+    overflow: hidden;
 }
 .m{
+    width: 20px;
     position: relative;
     top: -6px;
+    
 }
 .buttons{
     margin-top: 20px;
@@ -107,6 +114,7 @@ section .main{
 }
 footer{
     position: absolute;
+    right: 0;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -139,37 +147,18 @@ footer{
     }
 }
 /*Mobile View*/
-@media (max-width:768px){
-    .searchbox .icon{
-        width: 30%;
-        gap: 330px;
-    }
-    .buttons{
-        position: relative;
-        left: 82px;
-    }
-    .lang{
-        position: relative;
-        left: 75px;
-    }
-    .searchbox{
-        position: relative;
-        left: 80px;
-    }
+@media (max-width:768px){ 
     .row ul{
         display: block;
         gap: 200px;
-       }
-       .lg{
-        position: relative;
-        left: 70px;
-       }
-       section header{
-        position: absolute;
-        left: 170px;
-       }
+       }   
        footer{
         position: fixed;
         bottom: 0;
+       }
+       .m{
+        position: relative;
+        
+        z-index: 1;
        }
 }
