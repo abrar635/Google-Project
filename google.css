@@ -86,7 +86,6 @@ section .main{
     position: relative;
     top: -54px;
     left: 540px;
-    overflow: hidden;
 }
 .m{
     width: 20px;
@@ -141,7 +140,7 @@ footer{
 @media (min-width:1023px)
 /*Tablet*/
 
-@media (min-width:787px) and (max-width:1024px){
+@media (min-width:787px){
     section header ul li button{
         background-color: red;
     }
@@ -158,7 +157,6 @@ footer{
        }
        .m{
         position: relative;
-        
-        z-index: 1;
+        left: -1000px;
        }
 }
